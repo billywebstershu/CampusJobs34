@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using CampusJobsProject___Group_34.Models;
 
 public class ApplicationDbContext : DbContext
 {
