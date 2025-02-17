@@ -30,4 +30,9 @@
         public int RecruiterId { get; set; }
     }
 
+    public class EmployeeModel : StudentModel
+    {
+        public int JobId { get; set; }
+    }
+
 }
