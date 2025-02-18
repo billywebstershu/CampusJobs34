@@ -1,0 +1,139 @@
+.redBox{
+    position:absolute;
+    z-index: 0;
+    top: 194px;
+    display: flex;
+    align-content: center;
+    height: 525px;
+    width: 350px;
+    margin-left: 1040px;
+    padding:2px;
+    border-radius: 2%;
+    background-color:#bd1c3c;
+    color: #bd1c3c;
+}
+
+.whiteBox{
+
+    position: absolute;
+    z-index: 0;
+    top: 194px;
+    display: flex;
+    align-content: center;
+    height: 530px;
+    width: 500px;
+    margin-left: 545px;
+    margin-bottom: 20px;
+    padding: 2px;
+    border-radius: 2px;
+    border-color: black 1px;
+    outline: solid black 1px;
+    background-color: #ffffff;
+}
+
+
+#campusLogin{
+    position: absolute;
+    z-index: 1;
+    margin-left: 700px;
+    margin-top: 280px;
+    width: 350px;
+    font-size: 32px;
+
+}
+
+
+#passwordText{
+    position: absolute;
+    z-index: 1;
+    margin-left: 763px;
+    margin-top: 437px;
+    font-size: 18px;
+}
+
+
+#password{
+    position: absolute;
+    z-index: 1;
+    margin-left: 620px;
+    margin-top: 458px;
+    height:48px;
+    width: 350px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    
+}
+
+
+#emailText{
+    position: absolute;
+    z-index: 1;
+    margin-left: 776px;
+    margin-top: 366px;
+    font-size: 18px;
+}
+
+
+#email{
+    position: absolute;
+    z-index: 1;
+    margin-left: 620px;
+    margin-top: 386px;
+    height: 44px;
+    width: 350px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+
+#signIn{
+    position: absolute;
+    z-index: 1;
+    margin-left: 625px;
+    margin-top: 586px;
+    height:38px;
+    width:340px;
+    background-color:#bd1c3c;
+    color: #ffffff;
+    border-radius: 2px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 8px;
+
+}
+
+.selectPosition{
+    position: absolute;
+    z-index: 2;
+    height: 48px;
+    width:200px;
+    margin-left: 700px;
+    margin-top: 541px;
+
+}
+
+.selectBox{
+    position: absolute;
+    z-index: 1;
+    height:48px;
+    width:354px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-left: 620px;
+    margin-top: 525px;
+    background-color:#ffffff;
+
+}
+
+.backgroundImage{
+    position: absolute;
+    object-fit: cover;
+    height: auto;
+    display: block;
+    margin: 1px auto;
+    border: 1px solid;
+
+}
