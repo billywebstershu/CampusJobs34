@@ -14,21 +14,31 @@ namespace CampusJobsProject___Group_34.Controllers
 
         public IActionResult Index()
         {
-            // Example query
-            _dbConnection.Open();
-            var command = _dbConnection.CreateCommand();
-            command.CommandText = "SELECT * FROM Users";
-            var reader = command.ExecuteReader();
-
-            // Process the data...
-            while (reader.Read())
+            bool connectionSuccessful = false;
+            try
             {
-                var userId = reader["User_ID"].ToString();
-                // Do something with the data...
+                _dbConnection.Open();
+                //if the connection opens succesfully, set command to a basic query
+                var command = _dbConnection.CreateCommand();
+                command.CommandText = "SELECT 1"; // A simple query to check connection
+                command.ExecuteScalar();
+                connectionSuccessful = true;
+                _dbConnection.Close();
+            }
+            catch
+            {
+                // If any exception occurs during the connection or query, it's considered a failure.
+                connectionSuccessful = false;
+            }
+            finally
+            {
+                if (_dbConnection.State == ConnectionState.Open)
+                {
+                    _dbConnection.Close(); // Ensure connection is closed in all cases
+                }
             }
 
-            _dbConnection.Close();
-
+            ViewBag.DatabaseStatus = connectionSuccessful ? "Database connection successful!" : "Database connection failed.";
             return View();
         }
 
