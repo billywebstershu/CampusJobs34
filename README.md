@@ -162,16 +162,10 @@ Since we need a user login for the mvc application to connect to, we must create
     *   Navigate to the home page, as of the writing of this document there should be a message verifying the successful connection to the database.
     *   In the future however, other indicaters will be populated tables containing user data for example.
 
-3.  
+3.  **Database Connection Error:**
+   *    Error Display:** If there's a database connection error, the application may display an error message. 
 
-    ```
-    Database Connection Error
-    ```
     
-    
-
-    *   **Error Display:** If there's a database connection error, the application may display an error message. 
-
     
 
 ## Troubleshooting
