@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "TimeSheets";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" href="~/css/style.css" />
+    <script src="~/js/script.js"></script>
+
+<body> <text class="subheader"> Timesheets
+
+    <br><br>
+
+        <input type="text" class ="filterbar" id="pharmacyInput" onkeyup="filterTable()" placeholder="Search">
+
+    </text>
+
+    <div class="container">
+
+        <table id="Timesheets" class="table-container">
+            <tr>
+                <th class="thhead">Date</th>
+                <th class="thhead">Shift ID</th>
+                <th class="thhead">Available Shifts</th>
+                <th class="thhead">Start Time</th>
+                <th class="thhead">End Time</th>
+                <th class="thhead">Total Hours</th>
+                <th class="thhead">Recruiter</th>
+                <th class="thhead">Accept/Decline shift</th>
+            </tr>
+
+            @model List<Student_Dashboard.Models.TimeSheet>
+
+            @foreach (var timesheet in Model)
+            {
+                <tr>
+                    <td>@timesheet.Date</td>
+                    <td>@timesheet.ShiftId</td>
+                    <td>@timesheet.AvailableShifts</td>
+                    <td>@timesheet.StartTime</td>
+                    <td>@timesheet.EndTime</td>
+                    <td>@timesheet.TotalHours</td>
+                    <td>@timesheet.Recruiter</td>
+                    <th class="blankcell-acceptdecline"> <button class="accept-button">Accept</button> <button class="decline-button">Decline</button></th>
+                </tr>
+            }
+
+        </table>
+
+    </div>
+
+</body>
+
+</html>

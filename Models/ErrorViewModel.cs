@@ -1,4 +1,4 @@
-namespace CampusJobsProject___Group_34.Models
+namespace Student_Dashboard.Models
 {
     public class ErrorViewModel
     {
