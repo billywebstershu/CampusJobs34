@@ -181,8 +181,8 @@ Since we need a user login for the mvc application to connect to, we must create
 
 *   **Missing MySQL Connector:**
     *   The `.csproj` file includes the necessary MySQL connector packages:
-        ```
-        
+
+         ```      
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.2" />
         <PackageReference Include="MySql.Data" Version="9.2.0" />
         <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
