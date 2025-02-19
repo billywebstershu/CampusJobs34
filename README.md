@@ -163,7 +163,7 @@ Since we need a user login for the mvc application to connect to, we must create
     *   In the future however, other indicaters will be populated tables containing user data for example.
 
 3.  **Database Connection Error:**
-   *    Error Display:** If there's a database connection error, the application may display an error message. 
+    *    Error Display: If there's a database connection error, the application may display an error message. 
 
     
     
