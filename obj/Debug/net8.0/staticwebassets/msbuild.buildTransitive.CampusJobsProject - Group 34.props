@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CampusJobsProject - Group 34.props" />
+</Project>

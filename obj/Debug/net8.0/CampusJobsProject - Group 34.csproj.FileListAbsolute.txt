@@ -7,3 +7,114 @@
 /home/billywebster/_repos/CampusJobs34/obj/Debug/net8.0/CampusJobsProject - Group 34.RazorAssemblyInfo.cache
 /home/billywebster/_repos/CampusJobs34/obj/Debug/net8.0/CampusJobsProject - Group 34.RazorAssemblyInfo.cs
 /home/billywebster/_repos/CampusJobs34/obj/Debug/net8.0/CampusJobsProject - Group 34.sourcelink.json
+E:\git clone\obj\Debug\net8.0\CampusJobsProject - Group 34.csproj.AssemblyReference.cache
+E:\git clone\obj\Debug\net8.0\CampusJobsProject - Group 34.GeneratedMSBuildEditorConfig.editorconfig
+E:\git clone\obj\Debug\net8.0\CampusJobsProject - Group 34.AssemblyInfoInputs.cache
+E:\git clone\obj\Debug\net8.0\CampusJobsProject - Group 34.AssemblyInfo.cs
+E:\git clone\obj\Debug\net8.0\CampusJobsProject - Group 34.csproj.CoreCompileInputs.cache
+E:\git clone\obj\Debug\net8.0\CampusJobsProject - Group 34.MvcApplicationPartsAssemblyInfo.cache
+E:\git clone\obj\Debug\net8.0\CampusJobsProject - Group 34.RazorAssemblyInfo.cache
+E:\git clone\obj\Debug\net8.0\CampusJobsProject - Group 34.RazorAssemblyInfo.cs
+E:\git clone\obj\Debug\net8.0\CampusJobsProject - Group 34.sourcelink.json
+E:\git clone\bin\Debug\net8.0\appsettings.Development.json
+E:\git clone\bin\Debug\net8.0\appsettings.json
+E:\git clone\bin\Debug\net8.0\CampusJobsProject - Group 34.staticwebassets.runtime.json
+E:\git clone\bin\Debug\net8.0\CampusJobsProject - Group 34.staticwebassets.endpoints.json
+E:\git clone\bin\Debug\net8.0\CampusJobsProject - Group 34.exe
+E:\git clone\bin\Debug\net8.0\CampusJobsProject - Group 34.deps.json
+E:\git clone\bin\Debug\net8.0\CampusJobsProject - Group 34.runtimeconfig.json
+E:\git clone\bin\Debug\net8.0\CampusJobsProject - Group 34.dll
+E:\git clone\bin\Debug\net8.0\CampusJobsProject - Group 34.pdb
+E:\git clone\bin\Debug\net8.0\Azure.Core.dll
+E:\git clone\bin\Debug\net8.0\Azure.Identity.dll
+E:\git clone\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+E:\git clone\bin\Debug\net8.0\Google.Protobuf.dll
+E:\git clone\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+E:\git clone\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+E:\git clone\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\git clone\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+E:\git clone\bin\Debug\net8.0\MySql.Data.dll
+E:\git clone\bin\Debug\net8.0\MySqlConnector.dll
+E:\git clone\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+E:\git clone\bin\Debug\net8.0\System.ClientModel.dll
+E:\git clone\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\git clone\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+E:\git clone\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+E:\git clone\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\git clone\bin\Debug\net8.0\System.IO.Pipelines.dll
+E:\git clone\bin\Debug\net8.0\System.Memory.Data.dll
+E:\git clone\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\git clone\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\git clone\bin\Debug\net8.0\System.Security.Permissions.dll
+E:\git clone\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+E:\git clone\bin\Debug\net8.0\System.Text.Json.dll
+E:\git clone\bin\Debug\net8.0\System.Windows.Extensions.dll
+E:\git clone\bin\Debug\net8.0\ZstdSharp.dll
+E:\git clone\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+E:\git clone\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+E:\git clone\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+E:\git clone\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+E:\git clone\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+E:\git clone\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+E:\git clone\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+E:\git clone\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+E:\git clone\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+E:\git clone\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+E:\git clone\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+E:\git clone\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+E:\git clone\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+E:\git clone\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+E:\git clone\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+E:\git clone\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\git clone\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\git clone\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\git clone\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+E:\git clone\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+E:\git clone\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+E:\git clone\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+E:\git clone\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+E:\git clone\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+E:\git clone\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\git clone\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+E:\git clone\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+E:\git clone\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\git clone\obj\Debug\net8.0\scopedcss\bundle\CampusJobsProject - Group 34.styles.css
+E:\git clone\obj\Debug\net8.0\scopedcss\projectbundle\CampusJobsProject - Group 34.bundle.scp.css
+E:\git clone\obj\Debug\net8.0\staticwebassets.build.json
+E:\git clone\obj\Debug\net8.0\staticwebassets.development.json
+E:\git clone\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\git clone\obj\Debug\net8.0\staticwebassets\msbuild.CampusJobsProject - Group 34.Microsoft.AspNetCore.StaticWebAssets.props
+E:\git clone\obj\Debug\net8.0\staticwebassets\msbuild.CampusJobsProject - Group 34.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+E:\git clone\obj\Debug\net8.0\staticwebassets\msbuild.build.CampusJobsProject - Group 34.props
+E:\git clone\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.CampusJobsProject - Group 34.props
+E:\git clone\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CampusJobsProject - Group 34.props
+E:\git clone\obj\Debug\net8.0\staticwebassets.pack.json
+E:\git clone\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+E:\git clone\obj\Debug\net8.0\CampusJo.2A7758E5.Up2Date
+E:\git clone\obj\Debug\net8.0\CampusJobsProject - Group 34.dll
+E:\git clone\obj\Debug\net8.0\refint\CampusJobsProject - Group 34.dll
+E:\git clone\obj\Debug\net8.0\CampusJobsProject - Group 34.pdb
+E:\git clone\obj\Debug\net8.0\CampusJobsProject - Group 34.genruntimeconfig.cache
+E:\git clone\obj\Debug\net8.0\ref\CampusJobsProject - Group 34.dll

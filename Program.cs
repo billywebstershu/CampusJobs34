@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using MySql.Data.MySqlClient;
+using Microsoft.Data.SqlClient;
 using System.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,7 +10,7 @@ builder.Services.AddRazorPages();
 
 // Register the MySQL connection
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddTransient<IDbConnection>(_ => new MySqlConnection(connectionString));
+builder.Services.AddTransient<IDbConnection>(_ => new SqlConnection(connectionString));
 
 var app = builder.Build();
 
@@ -32,6 +32,6 @@ app.UseAuthentication();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Account}/{action=Login}/{id?}");
 
 app.Run();
