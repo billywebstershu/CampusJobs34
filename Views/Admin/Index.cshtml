@@ -1,7 +1,31 @@
+@model CampusJobsProject___Group_34.Models.UserModel
+
 @{
-    ViewData["Title"] = "Admin Panel";
+    ViewData["Title"] = "Admin Page";
 }
 
-<h1>Welcome To Account Management</h1>
-<p>Please Search for a User ID to get started</p>
+<h1>Admin Page</h1>
 
+@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+}
+
+<form asp-action="SearchUser" method="post">
+    <div class="form-group">
+        <label for="userId">Enter User ID:</label>
+        <input type="number" id="userId" name="userId" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+@if (Model != null)
+{
+    <h2>User Information</h2>
+    <p><strong>User ID:</strong> @Model.UserId</p>
+    <p><strong>First Name:</strong> @Model.FirstName</p>
+    <p><strong>Last Name:</strong> @Model.LastName</p>
+    <p><strong>Email:</strong> @Model.Email</p>
+    <p><strong>Role:</strong> @Model.Role</p>
+    <p><strong>Address:</strong> @Model.Address</p>
+}
