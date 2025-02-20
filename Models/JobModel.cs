@@ -1,4 +1,4 @@
-﻿namespace CampusJobsProject___Group_34.Models
+namespace CampusJobsProject___Group_34.Models
 {
     public class JobModel
     {
