@@ -1,28 +1,13 @@
-﻿namespace CampusJobsProject___Group_34.Models
+namespace CampusJobsProject___Group_34.Models
 {
     public class TimesheetModel
     {
-        public int TimesheetId { get; set; }
-        public int StudentId { get; set;}
-        public int RecruiterId { get; set; }
-        public double HoursWorked { get; set; }
-        public bool ApprovalStatus { get; set; }
-        public DateTime DateUploaded { get; set; }
-        public DateTime DateReviewed { get; set; }
-    }
-
-    public class WorkingHoursModel
-    {
-        public int OfferId { get; set; }
-        public int StudentId { get; set; }
-        public int RecruiterId { get; set; }
-        public double HoursOffered { get; set; }
-
-        //true if approved by admin, false if rejected or unanswered
-        public bool ApprovalStatus { get; set; }
-
-        //true if accepted by student, false if rejected or unanswered
-        public bool AcceptedStatus { get; set; }
-        public DateTime DateOffered { get; set; }
+        public int Timesheet_ID { get; set; }
+        public int Student_ID { get; set; }
+        public int Recruitment_ID { get; set; }
+        public decimal Hours_Worked { get; set; }
+        public bool Status { get; set; }
+        public DateTime Date_Uploaded { get; set; }
+        public DateTime Date_Reviewed { get; set; }
     }
 }
