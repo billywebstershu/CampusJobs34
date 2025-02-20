@@ -1,22 +1,25 @@
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Data;
-using MySql.Data.MySqlClient; 
+using MySql.Data.MySqlClient;
 using CampusJobsProject___Group_34.Models;
 
 namespace CampusJobsProject___Group_34.Controllers
 {
     public class AdminController : Controller
     {
-        private readonly string _connectionString;  
+        private readonly string _connectionString;
 
-        public AdminController(IConfiguration configuration) 
+        public AdminController(IConfiguration configuration)
         {
             _connectionString = configuration.GetConnectionString("DefaultConnection");
         }
+
         public IActionResult Index()
         {
-            return View(); 
+            return View();
         }
+
         [HttpPost]
         public IActionResult SearchUser(int userId)
         {
@@ -35,13 +38,21 @@ namespace CampusJobsProject___Group_34.Controllers
                         {
                             if (reader.Read())
                             {
+                                // Debugging: Output data types
+                                Console.WriteLine($"User_ID Type: {reader["User_ID"].GetType()}");
+                                Console.WriteLine($"First_Name Type: {reader["First_Name"].GetType()}");
+                                Console.WriteLine($"Last_Name Type: {reader["Last_Name"].GetType()}");
+                                Console.WriteLine($"Email Type: {reader["Email"].GetType()}");
+                                Console.WriteLine($"Role Type: {reader["Role"].GetType()}");
+                                Console.WriteLine($"Address Type: {(reader.IsDBNull(reader.GetOrdinal("Address")) ? "NULL" : reader["Address"].GetType().ToString())}");
+
                                 user = new UserModel
                                 {
-                                    UserId = reader.GetInt32("User_ID"),
+                                    UserID = reader.GetInt32("User_ID"),  // Ensure User_ID is an INT
                                     FirstName = reader.GetString("First_Name"),
                                     LastName = reader.GetString("Last_Name"),
                                     Email = reader.GetString("Email"),
-                                    Role = reader.GetString("Role"),
+                                    Role = reader["Role"].ToString(),  // Ensure Role is a string
                                     Address = reader.IsDBNull(reader.GetOrdinal("Address")) ? null : reader.GetString("Address")
                                 };
                             }
@@ -51,16 +62,17 @@ namespace CampusJobsProject___Group_34.Controllers
             }
             catch (Exception ex)
             {
-                ViewBag.ErrorMessage = "Error retrieving user: " + ex.Message;  
-                return View("Index"); 
+                ViewBag.ErrorMessage = "Error retrieving user: " + ex.Message;
+                return View("Index");
             }
+
             if (user == null)
             {
                 ViewBag.ErrorMessage = "User not found.";
                 return View("Index");
             }
 
-            return View("Index", user); 
+            return View("Index", user);
         }
     }
 }
