@@ -3,11 +3,11 @@ using System.Data;
 
 namespace CampusJobsProject___Group_34.Controllers
 {
-    public class HomeController : Controller
+    public class AdminController : Controller
     {
         private readonly IDbConnection _dbConnection;
 
-        public HomeController(IDbConnection dbConnection)
+        public Admincontroller(IDbConnection dbConnection)
         {
             _dbConnection = dbConnection;
         }
