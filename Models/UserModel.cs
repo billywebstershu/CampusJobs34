@@ -2,37 +2,33 @@
 {
     public class UserModel
     {
-        public int UserID { get; set; }
+        public int User_ID { get; set; }  
         public string Email { get; set; }
         public string Password { get; set; }
-        public string Role { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public int Role { get; set; } 
+        public string First_Name { get; set; }  
+        public string Last_Name { get; set; } 
         public string Address { get; set; } = string.Empty;
     }
 
     public class AdminModel : UserModel
     {
-        //model for admin database
-        public int AdminId { get; set; }
+        public int Admin_ID { get; set; } 
     }
 
     public class StudentModel : UserModel
     {
-        //model for student database
-        public int StudentId { get; set; }
-        public int VisaStatusId { get; set; }
+        public int Student_ID { get; set; } 
+        public int VisaStatus_ID { get; set; }  
     }
 
     public class RecruiterModel : UserModel
     {
-        //model for recruiter database
-        public int RecruiterId { get; set; }
+        public int Recruitment_ID { get; set; }  
     }
 
     public class EmployeeModel : StudentModel
     {
         public int JobId { get; set; }
     }
-
 }
