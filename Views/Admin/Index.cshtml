@@ -22,10 +22,10 @@
 @if (Model != null)
 {
     <h2>User Information</h2>
-    <p><strong>User ID:</strong> @Model.User_ID</p>  @* Fixed: Match with correct property *@
-    <p><strong>First Name:</strong> @Model.First_Name</p>  @* Fixed: Match with correct property *@
-    <p><strong>Last Name:</strong> @Model.Last_Name</p>  @* Fixed: Match with correct property *@
+    <p><strong>User ID:</strong> @Model.User_ID</p>  
+    <p><strong>First Name:</strong> @Model.First_Name</p> 
+    <p><strong>Last Name:</strong> @Model.Last_Name</p>  
     <p><strong>Email:</strong> @Model.Email</p>
-    <p><strong>Role:</strong> @Model.Role</p>  @* Role is now INT, so it will display properly *@
-    <p><strong>Address:</strong> @(string.IsNullOrEmpty(Model.Address) ? "N/A" : Model.Address)</p>  @* Handle NULL Address values *@
+    <p><strong>Role:</strong> @Model.Role</p>  
+    <p><strong>Address:</strong> @(string.IsNullOrEmpty(Model.Address) ? "N/A" : Model.Address)</p> 
 }
