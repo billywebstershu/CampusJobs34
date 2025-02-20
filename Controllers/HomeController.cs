@@ -18,23 +18,21 @@ namespace CampusJobsProject___Group_34.Controllers
             try
             {
                 _dbConnection.Open();
-                //if the connection opens succesfully, set command to a basic query
                 var command = _dbConnection.CreateCommand();
-                command.CommandText = "SELECT 1"; // A simple query to check connection
+                command.CommandText = "SELECT 1"; 
                 command.ExecuteScalar();
                 connectionSuccessful = true;
                 _dbConnection.Close();
             }
             catch
             {
-                // If any exception occurs during the connection or query, it's considered a failure.
                 connectionSuccessful = false;
             }
             finally
             {
                 if (_dbConnection.State == ConnectionState.Open)
                 {
-                    _dbConnection.Close(); // Ensure connection is closed in all cases
+                    _dbConnection.Close(); 
                 }
             }
 
