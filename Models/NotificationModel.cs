@@ -5,7 +5,7 @@
         public int NotificationID { get; set; }
         public int UserID { get; set; }
         public string Message { get; set; }
-        public DateTime Time { get; set; } //set timeonly to current time
+        public DateTime Time { get; set; } 
         public bool HasBeenRead { get; set; }
 
     }
