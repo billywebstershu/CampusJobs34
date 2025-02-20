@@ -1,31 +1,63 @@
-@model CampusJobsProject___Group_34.Models.UserModel
+@model List<CampusJobsProject___Group_34.Models.UserModel>
 
 @{
-    ViewData["Title"] = "Admin Page";
+    ViewData["Title"] = "Admin Panel - User Management";
 }
 
-<h1>Admin Page</h1>
+<h2>Admin - User Management</h2>
+
+
+<form asp-controller="Admin" asp-action="SearchUser" method="post" class="mb-3">
+    <div class="input-group">
+        <input type="number" name="userId" class="form-control" placeholder="Enter User ID" required />
+        <div class="input-group-append">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </div>
+</form>
+
 
 @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
 {
     <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
 }
 
-<form asp-action="SearchUser" method="post">
-    <div class="form-group">
-        <label for="userId">Enter User ID:</label>
-        <input type="number" id="userId" name="userId" class="form-control" required />
-    </div>
-    <button type="submit" class="btn btn-primary">Search</button>
-</form>
-
-@if (Model != null)
-{
-    <h2>User Information</h2>
-    <p><strong>User ID:</strong> @Model.User_ID</p>  
-    <p><strong>First Name:</strong> @Model.First_Name</p> 
-    <p><strong>Last Name:</strong> @Model.Last_Name</p>  
-    <p><strong>Email:</strong> @Model.Email</p>
-    <p><strong>Role:</strong> @Model.Role</p>  
-    <p><strong>Address:</strong> @(string.IsNullOrEmpty(Model.Address) ? "N/A" : Model.Address)</p> 
-}
+<!-- Display Users Table -->
+<table class="table table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th>User ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Address</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.User_ID</td>
+                    <td>@user.First_Name</td>
+                    <td>@user.Last_Name</td>
+                    <td>@user.Email</td>
+                    <td>@user.Role</td>
+                    <td>@user.Address</td>
+                    <td>
+                        <a asp-controller="Admin" asp-action="EditUser" asp-route-id="@user.User_ID" class="btn btn-sm btn-primary">Edit</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="7" class="text-center">No users found.</td>
+            </tr>
+        }
+    </tbody>
+</table>
