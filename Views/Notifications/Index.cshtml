@@ -1,10 +1,27 @@
-﻿@{
+﻿@model IEnumerable<Student_Dashboard.Models.Notification>
+
+@{
     ViewData["Title"] = "Notifications";
 }
 
-<h2>Notifications</h2>
-<ul>
-    <li>📢 New assignment posted</li>
-    <li>📆 Meeting scheduled for tomorrow</li>
-    <li>✅ Profile updated successfully</li>
-</ul>
+<h2 style="margin-top: -1%;">Notifications</h2>
+
+<div class="notification-container">
+    @if (Model.Any())
+    {
+        <ul class="notification-list">
+            @foreach (var notification in Model)
+            {
+                <li class="notification-item @(notification.Read ? "read" : "unread")">
+                    <p>@notification.Message</p>
+                    <p class="time">@notification.Time</p>
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No notifications available.</p>
+    }
+</div>
+

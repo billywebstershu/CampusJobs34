@@ -2,7 +2,46 @@
     ViewData["Title"] = "Profile";
 }
 
-<h2>Your Profile</h2>
-<p><strong>Name:</strong> John Doe</p>
-<p><strong>Email:</strong> johndoe@example.com</p>
-<p><strong>Role:</strong> Student</p>
+<body>
+    <div>
+        <div class="banner-container">
+            <img src="Icons\Banner.jpeg">
+            <div class="banner-text">
+                <h2>@ViewData["Title"]</h2>
+                <p>Manage your personal information and settings.</p>
+            </div>
+        </div>
+
+
+        <div style="display: flex; justify-content: space-between;">
+            <div style="width: 48%;">
+                <h3>Personal Information</h3>
+                <div>
+                    <p><strong>Name:</strong> John Doe</p>
+                    <p><strong>Email:</strong> johndoe@example.com</p>
+                    <p><strong>Phone:</strong> +123 456 7890</p>
+                    <p><strong>Address:</strong> 1234 Elm Street, Example City</p>
+                </div>
+            </div>
+
+            <div style="width: 48%;">
+                <h3>Settings</h3>
+                <div>
+                    <p><strong>Notifications:</strong> Enabled</p>
+                    <p><strong>Dark Mode:</strong> Disabled</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="button-container">
+            <button class="btn edit-btn">
+                <i class="fas fa-edit"></i> Edit Profile
+            </button>
+            <button class="btn logout-btn">
+                <i class="fas fa-sign-out-alt"></i> Log Out
+            </button>
+        </div>
+    </div>
+
+</body>
