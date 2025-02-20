@@ -1,6 +1,12 @@
 @{
-    ViewData["Title"] = "Account Management";
+    ViewData["Title"] = "Home Page";
 }
 
-<h1>Account Management</h1>
-<p>Welcome to your account management page, search for a User ID to start.</p>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    @if (ViewBag.DatabaseStatus != null)
+    {
+        <p>@ViewBag.DatabaseStatus</p>
+    }
+</div>
