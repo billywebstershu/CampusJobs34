@@ -13,24 +13,19 @@ namespace CampusJobsProject___Group_34.Controllers
         {
             _connectionString = configuration.GetConnectionString("DefaultConnection");
         }
-
-
         public IActionResult Index()
         {
             return View(); 
         }
-
         [HttpPost]
         public IActionResult SearchUser(int userId)
         {
             UserModel user = null;
-
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(_connectionString))
                 {
                     connection.Open();
-
                     string sql = "SELECT User_ID, First_Name, Last_Name, Email, Role, Address FROM Users WHERE User_ID = @UserId";
                     using (MySqlCommand command = new MySqlCommand(sql, connection))
                     {
@@ -47,7 +42,7 @@ namespace CampusJobsProject___Group_34.Controllers
                                     LastName = reader.GetString("Last_Name"),
                                     Email = reader.GetString("Email"),
                                     Role = reader.GetString("Role"),
-                                    Address = reader.GetString("Address")
+                                    Address = reader.IsDBNull(reader.GetOrdinal("Address")) ? null : reader.GetString("Address")
                                 };
                             }
                         }
@@ -56,11 +51,9 @@ namespace CampusJobsProject___Group_34.Controllers
             }
             catch (Exception ex)
             {
-               
                 ViewBag.ErrorMessage = "Error retrieving user: " + ex.Message;  
                 return View("Index"); 
             }
-
             if (user == null)
             {
                 ViewBag.ErrorMessage = "User not found.";
