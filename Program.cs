@@ -11,6 +11,7 @@ builder.Services.AddRazorPages();
 // Register the MySQL connection
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddTransient<IDbConnection>(_ => new MySqlConnection(connectionString));
+builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
 
 var app = builder.Build();
 
