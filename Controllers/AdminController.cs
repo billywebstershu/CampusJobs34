@@ -38,7 +38,7 @@ namespace CampusJobsProject___Group_34.Controllers
                         {
                             if (reader.Read())
                             {
-                                // Debugging: Output data types
+                                // Debugging: Output data types to check for mismatches
                                 Console.WriteLine($"User_ID Type: {reader["User_ID"].GetType()}");
                                 Console.WriteLine($"First_Name Type: {reader["First_Name"].GetType()}");
                                 Console.WriteLine($"Last_Name Type: {reader["Last_Name"].GetType()}");
@@ -48,11 +48,11 @@ namespace CampusJobsProject___Group_34.Controllers
 
                                 user = new UserModel
                                 {
-                                    UserID = reader.GetInt32("User_ID"),  // Ensure User_ID is an INT
-                                    FirstName = reader.GetString("First_Name"),
-                                    LastName = reader.GetString("Last_Name"),
+                                    User_ID = reader.GetInt32("User_ID"),  
+                                    First_Name = reader.GetString("First_Name"),
+                                    Last_Name = reader.GetString("Last_Name"),
                                     Email = reader.GetString("Email"),
-                                    Role = reader["Role"].ToString(),  // Ensure Role is a string
+                                    Role = reader.GetInt32("Role"),  
                                     Address = reader.IsDBNull(reader.GetOrdinal("Address")) ? null : reader.GetString("Address")
                                 };
                             }
