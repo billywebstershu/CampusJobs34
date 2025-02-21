@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Student_Dashboard.Models;
+using CampusJobsProject___Group_34.Models;
 
 namespace CampusJobsProject___Group_34.Controllers;
 
