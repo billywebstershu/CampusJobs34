@@ -9,9 +9,9 @@ namespace CampusJobsProject___Group_34.Controllers
     {
         public ActionResult Index()
         {
-            var timesheets = new List<TimeSheet>
+            var timesheets = new List<TimesheetModel>
 {
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-02-19"),
         ShiftId = "S001",
@@ -21,7 +21,7 @@ namespace CampusJobsProject___Group_34.Controllers
         TotalHours = 4,
         Recruiter = "John Doe"
     },
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-02-20"),
         ShiftId = "S002",
@@ -31,7 +31,7 @@ namespace CampusJobsProject___Group_34.Controllers
         TotalHours = 4,
         Recruiter = "Jane Doe"
     },
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-02-21"),
         ShiftId = "S003",
@@ -41,7 +41,7 @@ namespace CampusJobsProject___Group_34.Controllers
         TotalHours = 8,
         Recruiter = "Alice Smith"
     },
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-02-22"),
         ShiftId = "S004",
@@ -51,7 +51,7 @@ namespace CampusJobsProject___Group_34.Controllers
         TotalHours = 4,
         Recruiter = "Bob Johnson"
     },
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-02-23"),
         ShiftId = "S005",
@@ -61,7 +61,7 @@ namespace CampusJobsProject___Group_34.Controllers
         TotalHours = 4,
         Recruiter = "Charlie Brown"
     },
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-02-24"),
         ShiftId = "S006",
@@ -71,7 +71,7 @@ namespace CampusJobsProject___Group_34.Controllers
         TotalHours = 8,
         Recruiter = "Diana Evans"
     },
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-02-25"),
         ShiftId = "S007",
@@ -81,7 +81,7 @@ namespace CampusJobsProject___Group_34.Controllers
         TotalHours = 4,
         Recruiter = "Ethan Harris"
     },
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-02-26"),
         ShiftId = "S008",
@@ -91,7 +91,7 @@ namespace CampusJobsProject___Group_34.Controllers
         TotalHours = 4,
         Recruiter = "Fiona Clark"
     },
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-02-27"),
         ShiftId = "S009",
@@ -101,7 +101,7 @@ namespace CampusJobsProject___Group_34.Controllers
         TotalHours = 8,
         Recruiter = "George Lewis"
     },
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-02-28"),
         ShiftId = "S010",
@@ -111,7 +111,7 @@ namespace CampusJobsProject___Group_34.Controllers
         TotalHours = 4,
         Recruiter = "Hannah Walker"
     },
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-03-01"),
         ShiftId = "S011",
@@ -121,7 +121,7 @@ namespace CampusJobsProject___Group_34.Controllers
         TotalHours = 4,
         Recruiter = "Ian Hall"
     },
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-03-02"),
         ShiftId = "S012",
@@ -131,7 +131,7 @@ namespace CampusJobsProject___Group_34.Controllers
         TotalHours = 8,
         Recruiter = "Julia Young"
     },
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-03-03"),
         ShiftId = "S013",
@@ -141,7 +141,7 @@ namespace CampusJobsProject___Group_34.Controllers
         TotalHours = 4,
         Recruiter = "Kevin King"
     },
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-03-04"),
         ShiftId = "S014",
@@ -151,7 +151,7 @@ namespace CampusJobsProject___Group_34.Controllers
         TotalHours = 4,
         Recruiter = "Laura Scott"
     },
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-03-05"),
         ShiftId = "S015",
@@ -161,7 +161,7 @@ namespace CampusJobsProject___Group_34.Controllers
         TotalHours = 8,
         Recruiter = "Michael Green"
     },
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-03-06"),
         ShiftId = "S016",
@@ -171,7 +171,7 @@ namespace CampusJobsProject___Group_34.Controllers
         TotalHours = 4,
         Recruiter = "Natalie Adams"
     },
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-03-07"),
         ShiftId = "S017",
@@ -181,7 +181,7 @@ namespace CampusJobsProject___Group_34.Controllers
         TotalHours = 4,
         Recruiter = "Oliver Wright"
     },
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-03-08"),
         ShiftId = "S018",
@@ -191,7 +191,7 @@ namespace CampusJobsProject___Group_34.Controllers
         TotalHours = 8,
         Recruiter = "Paula Martinez"
     },
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-03-09"),
         ShiftId = "S019",
@@ -201,7 +201,7 @@ namespace CampusJobsProject___Group_34.Controllers
         TotalHours = 4,
         Recruiter = "Quincy Turner"
     },
-    new TimeSheet
+    new TimesheetModel
     {
         Date = DateTime.Parse("2025-03-10"),
         ShiftId = "S020",
