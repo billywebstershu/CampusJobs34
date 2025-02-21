@@ -35,13 +35,13 @@
             @foreach (var timesheet in Model)
             {
                 <tr>
-                    <td>@timesheet.Date</td>
-                    <td>@timesheet.ShiftId</td>
-                    <td>@timesheet.AvailableShifts</td>
-                    <td>@timesheet.StartTime</td>
-                    <td>@timesheet.EndTime</td>
-                    <td>@timesheet.TotalHours</td>
-                    <td>@timesheet.Recruiter</td>
+                    <td>@timesheet.Date_Uploaded</td>
+                    <td>@timesheet.Timesheet_ID</td>
+                    <td>Time of shift:</td>
+                    <td>Start of shift:</td>
+                    <td>End of shift:</td>
+                    <td>@timesheet.Hours_Worked</td>
+                    <td>@timesheet.Recruitment_ID </td>
                     <th class="blankcell-acceptdecline">
                         <button class="accept-button" onclick="handleAccept(this)" id="acceptButton">Accept</button>
                         <button class="decline-button" onclick="handleDecline(this)" id="declineButton">Decline</button>
