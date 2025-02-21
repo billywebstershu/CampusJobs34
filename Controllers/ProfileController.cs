@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Student_Dashboard.Controllers
+namespace CampusJobsProject___Group_34.Controllers
 {
     public class ProfileController : Controller
     {
