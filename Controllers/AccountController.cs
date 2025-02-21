@@ -13,26 +13,26 @@ namespace CampusJobsProject___Group_34.Controllers
             _configuration = configuration;
         }
 
-        // GET: /Account/Login
+       
         [HttpGet]
         public IActionResult Login()
         {
             return View();
         }
 
-        // POST: /Account/Login
+       
         [HttpPost]
         public IActionResult Login(string email, string password, string role)
         {
-            // 1. Get the connection string
+           
             string connectionString = _configuration.GetConnectionString("DefaultConnection");
 
-            // 2. Connect to the database
+           
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();
 
-                // 3. Query the Users table for a matching Email, Password, and Role
+               
                 string query = @"SELECT Role 
                                  FROM Users 
                                  WHERE Email = @Email 
@@ -48,10 +48,10 @@ namespace CampusJobsProject___Group_34.Controllers
                     var roleObj = cmd.ExecuteScalar();
                     if (roleObj != null)
                     {
-                        // Found a match in the DB
+                        
                         string foundRole = roleObj.ToString();
 
-                        // 4. Redirect based on role
+                       
                         if (foundRole.Equals("Student", StringComparison.OrdinalIgnoreCase))
                         {
                             return RedirectToAction("Index", "Student");
