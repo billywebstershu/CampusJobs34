@@ -13,203 +13,165 @@ namespace CampusJobsProject___Group_34.Controllers
 {
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-02-19"),
-        ShiftId = "S001",
-        AvailableShifts = "Morning",
-        StartTime = DateTime.Parse("08:00"),
-        EndTime = DateTime.Parse("12:00"),
-        TotalHours = 4,
-        Recruiter = "John Doe"
+        Date_Uploaded = DateTime.Parse("2025-02-19"),
+        Timesheet_ID = "S001",
+        
+       
+        Hours_Worked = 4,
+        Recruitment_ID = 20
     },
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-02-20"),
-        ShiftId = "S002",
-        AvailableShifts = "Evening",
-        StartTime = DateTime.Parse("16:00"),
-        EndTime = DateTime.Parse("20:00"),
-        TotalHours = 4,
-        Recruiter = "Jane Doe"
+        Date_Uploaded = DateTime.Parse("2025-02-20"),
+        Timesheet_ID = "S002",
+        
+        
+        Hours_Worked = 4,
+        Recruitment_ID = 19
     },
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-02-21"),
-        ShiftId = "S003",
-        AvailableShifts = "Night",
-        StartTime = DateTime.Parse("22:00"),
-        EndTime = DateTime.Parse("06:00"),
-        TotalHours = 8,
-        Recruiter = "Alice Smith"
+        Date_Uploaded = DateTime.Parse("2025-02-21"),
+        Timesheet_ID = "S003",
+       
+        Hours_Worked = 8,
+        Recruitment_ID = 18
     },
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-02-22"),
-        ShiftId = "S004",
-        AvailableShifts = "Morning",
-        StartTime = DateTime.Parse("08:00"),
-        EndTime = DateTime.Parse("12:00"),
-        TotalHours = 4,
-        Recruiter = "Bob Johnson"
+        Date_Uploaded = DateTime.Parse("2025-02-22"),
+        Timesheet_ID = "S004",
+       
+        Hours_Worked = 4,
+        Recruitment_ID = 17
     },
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-02-23"),
-        ShiftId = "S005",
-        AvailableShifts = "Evening",
-        StartTime = DateTime.Parse("16:00"),
-        EndTime = DateTime.Parse("20:00"),
-        TotalHours = 4,
-        Recruiter = "Charlie Brown"
+        Date_Uploaded = DateTime.Parse("2025-02-23"),
+        Timesheet_ID = "S005",
+       
+        Hours_Worked = 4,
+        Recruitment_ID = 16
     },
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-02-24"),
-        ShiftId = "S006",
-        AvailableShifts = "Night",
-        StartTime = DateTime.Parse("22:00"),
-        EndTime = DateTime.Parse("06:00"),
-        TotalHours = 8,
-        Recruiter = "Diana Evans"
+        Date_Uploaded = DateTime.Parse("2025-02-24"),
+        Timesheet_ID = "S006",
+        
+        Hours_Worked = 8,
+        Recruitment_ID = 15
     },
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-02-25"),
-        ShiftId = "S007",
-        AvailableShifts = "Morning",
-        StartTime = DateTime.Parse("08:00"),
-        EndTime = DateTime.Parse("12:00"),
-        TotalHours = 4,
-        Recruiter = "Ethan Harris"
+        Date_Uploaded = DateTime.Parse("2025-02-25"),
+        Timesheet_ID = "S007",
+        
+        Hours_Worked = 4,
+        Recruitment_ID = 14
     },
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-02-26"),
-        ShiftId = "S008",
-        AvailableShifts = "Evening",
-        StartTime = DateTime.Parse("16:00"),
-        EndTime = DateTime.Parse("20:00"),
-        TotalHours = 4,
-        Recruiter = "Fiona Clark"
+        Date_Uploaded = DateTime.Parse("2025-02-26"),
+        Timesheet_ID= "S008",
+       
+        Hours_Worked = 4,
+        Recruitment_ID = 13
     },
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-02-27"),
-        ShiftId = "S009",
-        AvailableShifts = "Night",
-        StartTime = DateTime.Parse("22:00"),
-        EndTime = DateTime.Parse("06:00"),
-        TotalHours = 8,
-        Recruiter = "George Lewis"
+        Date_Uploaded = DateTime.Parse("2025-02-27"),
+        Timesheet_ID = "S009",
+       
+        Hours_Worked = 8,
+        Recruitment_ID = 12
     },
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-02-28"),
-        ShiftId = "S010",
-        AvailableShifts = "Morning",
-        StartTime = DateTime.Parse("08:00"),
-        EndTime = DateTime.Parse("12:00"),
-        TotalHours = 4,
-        Recruiter = "Hannah Walker"
+        Date_Uploaded = DateTime.Parse("2025-02-28"),
+        Timesheet_ID = "S010",
+       
+        Hours_Worked = 4,
+        Recruitment_ID = 11
     },
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-03-01"),
-        ShiftId = "S011",
-        AvailableShifts = "Evening",
-        StartTime = DateTime.Parse("16:00"),
-        EndTime = DateTime.Parse("20:00"),
-        TotalHours = 4,
-        Recruiter = "Ian Hall"
+        Date_Uploaded = DateTime.Parse("2025-03-01"),
+        Timesheet_ID = "S011",
+       
+        Hours_Worked = 4,
+        Recruitment_ID = 10
     },
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-03-02"),
-        ShiftId = "S012",
-        AvailableShifts = "Night",
-        StartTime = DateTime.Parse("22:00"),
-        EndTime = DateTime.Parse("06:00"),
-        TotalHours = 8,
-        Recruiter = "Julia Young"
+        Date_Uploaded = DateTime.Parse("2025-03-02"),
+        Timesheet_ID = "S012",
+       
+        Hours_Worked = 8,
+        Recruitment_ID = 9
     },
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-03-03"),
-        ShiftId = "S013",
-        AvailableShifts = "Morning",
-        StartTime = DateTime.Parse("08:00"),
-        EndTime = DateTime.Parse("12:00"),
-        TotalHours = 4,
-        Recruiter = "Kevin King"
+        Date_Uploaded = DateTime.Parse("2025-03-03"),
+        Timesheet_ID = "S013",
+        
+        Hours_Worked = 4,
+        Recruitment_ID = 8
     },
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-03-04"),
-        ShiftId = "S014",
-        AvailableShifts = "Evening",
-        StartTime = DateTime.Parse("16:00"),
-        EndTime = DateTime.Parse("20:00"),
-        TotalHours = 4,
-        Recruiter = "Laura Scott"
+        Date_Uploaded = DateTime.Parse("2025-03-04"),
+        Timesheet_ID = "S014",
+       
+        Hours_Worked = 4,
+        Recruitment_ID = 7
     },
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-03-05"),
-        ShiftId = "S015",
-        AvailableShifts = "Night",
-        StartTime = DateTime.Parse("22:00"),
-        EndTime = DateTime.Parse("06:00"),
-        TotalHours = 8,
-        Recruiter = "Michael Green"
+        Date_Uploaded = DateTime.Parse("2025-03-05"),
+        Timesheet_ID = "S015",
+        
+        Hours_Worked = 8,
+        Recruitment_ID = 6
     },
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-03-06"),
-        ShiftId = "S016",
-        AvailableShifts = "Morning",
-        StartTime = DateTime.Parse("08:00"),
-        EndTime = DateTime.Parse("12:00"),
-        TotalHours = 4,
-        Recruiter = "Natalie Adams"
+        Date_Uploaded = DateTime.Parse("2025-03-06"),
+        Timesheet_ID = "S016",
+       
+        Hours_Worked = 4,
+        Recruitment_ID = 5
     },
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-03-07"),
-        ShiftId = "S017",
-        AvailableShifts = "Evening",
-        StartTime = DateTime.Parse("16:00"),
-        EndTime = DateTime.Parse("20:00"),
-        TotalHours = 4,
-        Recruiter = "Oliver Wright"
+        Date_Uploaded = DateTime.Parse("2025-03-07"),
+        Timesheet_ID = "S017",
+       
+        Hours_Worked = 4,
+        Recruitment_ID = 4
     },
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-03-08"),
-        ShiftId = "S018",
-        AvailableShifts = "Night",
-        StartTime = DateTime.Parse("22:00"),
-        EndTime = DateTime.Parse("06:00"),
-        TotalHours = 8,
-        Recruiter = "Paula Martinez"
+        Date_Uploaded = DateTime.Parse("2025-03-08"),
+        Timesheet_ID = "S018",
+        
+        Hours_Worked = 8,
+        Recruitment_ID = 3
     },
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-03-09"),
-        ShiftId = "S019",
-        AvailableShifts = "Morning",
-        StartTime = DateTime.Parse("08:00"),
-        EndTime = DateTime.Parse("12:00"),
-        TotalHours = 4,
-        Recruiter = "Quincy Turner"
+        Date_Uploaded = DateTime.Parse("2025-03-09"),
+        Timesheet_ID = "S019",
+       
+        Hours_Worked = 4,
+        Recruitment_ID = 2
     },
     new TimesheetModel
     {
-        Date = DateTime.Parse("2025-03-10"),
-        ShiftId = "S020",
-        AvailableShifts = "Evening",
-        StartTime = DateTime.Parse("16:00"),
-        EndTime = DateTime.Parse("20:00"),
-        TotalHours = 4,
-        Recruiter = "Rachel White"
+        Date_Uploaded = DateTime.Parse("2025-03-10"),
+        Timesheet_ID = "S020",
+        
+        Hours_Worked = 4,
+        Recruitment_ID = 1
     }
 };
 
