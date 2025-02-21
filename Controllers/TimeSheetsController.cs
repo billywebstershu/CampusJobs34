@@ -32,6 +32,37 @@ namespace CampusJobsProject___Group_34.Controllers
                 new TimesheetModel { Date_Uploaded = DateTime.Parse("2025-03-09"), Timesheet_ID = 19, Hours_Worked = 4, Recruitment_ID = 2 },
                 new TimesheetModel { Date_Uploaded = DateTime.Parse("2025-03-10"), Timesheet_ID = 20, Hours_Worked = 4, Recruitment_ID = 1 }
             };
+            var recruiters = new Dictionary<int, (string FirstName, string LastName)>
+            {
+                { 20, ("John", "Doe") },
+                { 19, ("Jane", "Smith") },
+                { 18, ("Alice", "Johnson") },
+                { 17, ("Bob", "Brown") },
+                { 16, ("Charlie", "Davis") },
+                { 15, ("David", "Wilson") },
+                { 14, ("Eve", "Miller") },
+                { 13, ("Frank", "Taylor") },
+                { 12, ("Grace", "Anderson") },
+                { 11, ("Henry", "Thomas") },
+                { 10, ("Ivy", "Jackson") },
+                { 9, ("Jack", "White") },
+                { 8, ("Kathy", "Martin") },
+                { 7, ("Liam", "Lee") },
+                { 6, ("Mona", "Young") },
+                { 5, ("Nina", "Harris") },
+                { 4, ("Oliver", "Clark") },
+                { 3, ("Paul", "Lewis") },
+                { 2, ("Quinn", "Roberts") },
+                { 1, ("Rachel", "Walker") }
+            };
+            foreach (var timesheet in timesheets)
+            {
+                if (recruiters.ContainsKey(timesheet.Recruitment_ID))
+                {
+                    timesheet.RecruiterFirstName = recruiters[timesheet.Recruitment_ID].FirstName;
+                    timesheet.RecruiterLastName = recruiters[timesheet.Recruitment_ID].LastName;
+                }
+            }
 
             return View(timesheets);
         }
