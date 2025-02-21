@@ -2,7 +2,7 @@
 using Student_Dashboard.Models;
 using System.Collections.Generic;
 
-namespace Student_Dashboard.Controllers
+namespace CampusJobsProject___Group_34.Controllers
 {
     public class NotificationsController : Controller
     {
