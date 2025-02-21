@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Data;
 using MySql.Data.MySqlClient;
@@ -6,55 +7,77 @@ using CampusJobsProject___Group_34.Models;
 
 namespace CampusJobsProject___Group_34.Controllers
 {
-    public class AdminController : Controller
+    public class AccountController : Controller
     {
+        private readonly IConfiguration _configuration;
         private readonly string _connectionString;
 
-        public AdminController(IConfiguration configuration)
+        public AccountController(IConfiguration configuration)
         {
+            _configuration = configuration;
             _connectionString = configuration.GetConnectionString("DefaultConnection");
         }
 
-        public IActionResult Index()
+       
+        [HttpGet]
+        public IActionResult Login()
         {
+           
+            HttpContext.Session.Clear();
             return View();
         }
 
+       
         [HttpPost]
-        public IActionResult SearchUser(int userId)
+        public IActionResult Login(string email, string password, string role)
         {
-            UserModel user = null;
+            
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+            {
+                ViewBag.Error = "Email and password are required.";
+                return View();
+            }
+
+            
+            if (role != "Student")
+            {
+                ViewBag.Error = "Access denied. Only students can login.";
+                return View();
+            }
+
             try
             {
                 using (MySqlConnection connection = new MySqlConnection(_connectionString))
                 {
                     connection.Open();
-                    string sql = "SELECT User_ID, First_Name, Last_Name, Email, Role, Address FROM Users WHERE User_ID = @UserId";
+                    string sql = @"SELECT User_ID, First_Name, Last_Name 
+                                 FROM Users 
+                                 WHERE Email = @Email 
+                                 AND Password = @Password 
+                                 AND Role = 1";
+
                     using (MySqlCommand command = new MySqlCommand(sql, connection))
                     {
-                        command.Parameters.AddWithValue("@UserId", userId);
+                        command.Parameters.AddWithValue("@Email", email);
+                        command.Parameters.AddWithValue("@Password", password);
 
                         using (MySqlDataReader reader = command.ExecuteReader())
                         {
                             if (reader.Read())
                             {
-                                // Debugging: Output data types to check for mismatches
-                                Console.WriteLine($"User_ID Type: {reader["User_ID"].GetType()}");
-                                Console.WriteLine($"First_Name Type: {reader["First_Name"].GetType()}");
-                                Console.WriteLine($"Last_Name Type: {reader["Last_Name"].GetType()}");
-                                Console.WriteLine($"Email Type: {reader["Email"].GetType()}");
-                                Console.WriteLine($"Role Type: {reader["Role"].GetType()}");
-                                Console.WriteLine($"Address Type: {(reader.IsDBNull(reader.GetOrdinal("Address")) ? "NULL" : reader["Address"].GetType().ToString())}");
+                               
+                                HttpContext.Session.SetInt32("UserId", reader.GetInt32("User_ID"));
+                                HttpContext.Session.SetString("FirstName", reader.GetString("First_Name"));
+                                HttpContext.Session.SetString("LastName", reader.GetString("Last_Name"));
+                                HttpContext.Session.SetString("Role", "Student");
 
-                                user = new UserModel
-                                {
-                                    User_ID = reader.GetInt32("User_ID"),  
-                                    First_Name = reader.GetString("First_Name"),
-                                    Last_Name = reader.GetString("Last_Name"),
-                                    Email = reader.GetString("Email"),
-                                    Role = reader.GetInt32("Role"),  
-                                    Address = reader.IsDBNull(reader.GetOrdinal("Address")) ? null : reader.GetString("Address")
-                                };
+                                // Redirect to student homepage
+                                return RedirectToAction("Index", "Homepage");
+                            }
+                            else
+                            {
+                                ViewBag.Error = "Invalid email or password.";
+                                return View();
                             }
                         }
                     }
@@ -62,17 +85,24 @@ namespace CampusJobsProject___Group_34.Controllers
             }
             catch (Exception ex)
             {
-                ViewBag.ErrorMessage = "Error retrieving user: " + ex.Message;
-                return View("Index");
+                
+                ViewBag.Error = "An error occurred while logging in.";
+                return View();
             }
+        }
 
-            if (user == null)
-            {
-                ViewBag.ErrorMessage = "User not found.";
-                return View("Index");
-            }
+        [HttpGet]
+        public IActionResult Logout()
+        {
+            
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login");
+        }
 
-            return View("Index", user);
+        
+        private bool IsAuthenticated()
+        {
+            return HttpContext.Session.GetInt32("UserId").HasValue;
         }
     }
 }
