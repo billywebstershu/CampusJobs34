@@ -2,7 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Student_Dashboard.Models;
 
-namespace Student_Dashboard.Controllers;
+namespace CampusJobsProject___Group_34.Controllers;
 
 public class HomeController : Controller
 {
