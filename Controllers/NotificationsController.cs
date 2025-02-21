@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Student_Dashboard.Models;
+using CampusJobsProject___Group_34.Models;
 using System.Collections.Generic;
 
 namespace CampusJobsProject___Group_34.Controllers
