@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using Student_Dashboard.Models;
 
-namespace Student_Dashboard.Controllers
+namespace CampusJobsProject___Group_34.Controllers
 {
     public class TimeSheetsController : Controller
     {
