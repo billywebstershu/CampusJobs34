@@ -9,5 +9,7 @@ namespace CampusJobsProject___Group_34.Models
         public bool Status { get; set; }
         public DateTime Date_Uploaded { get; set; }
         public DateTime Date_Reviewed { get; set; }
+        public string RecruiterFirstName { get; set; }  
+        public string RecruiterLastName { get; set; }   
     }
 }
